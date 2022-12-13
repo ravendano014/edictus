@@ -1,0 +1,27 @@
+@api =  https://edictus.herokuapp.com
+
+GET {{api}}/api/user
+
+### Register
+POST {{api}}/api/user/register
+Content-Type: application/json
+
+{
+    "usuario": "AR310",
+    "nombres": "Otro Guey",
+    "apelliods": "Apellidos"
+    
+}
+
+### Mailer
+POST {{api}}/api/send-email
+Content-Type: application/json
+
+{
+    "user_email": "ronald.avendano@oj.gob.sv",
+    "to_email":         "ravendano014plus@gmail.com",            
+    "subject_email":    "hello from kanchan",
+    "html_email":   "<p>good to see you</p>",
+    "text_email":   "that was easy"
+}
+

@@ -1,0 +1,30 @@
+### Get all Product
+GET https://edictus.herokuapp.com/items
+
+
+### Create a new Product
+POST https://edictus.herokuapp.com/items
+Content-Type: application/json
+
+{
+  "name": "9515209"
+}
+
+
+### Get a single product
+GET https://edictus.herokuapp.com/items/1
+
+### Delete a single Product
+DELETE https://edictus.herokuapp.com/items/1
+
+
+### Update a Product
+PUT https://edictus.herokuapp.com/items/1
+Content-Type: application/json
+
+{
+  "name": "9417695"
+}
+
+### pagination of items
+GET https://edictus.herokuapp.com/items?limit=10&page=10

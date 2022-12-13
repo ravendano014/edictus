@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API Edictos  A simple GraphQL-MySQL Node.js project to get you started quickly",
+  "main": "index.js",
+  "engines": {
+  "node": "16.5.0",
+  "npm": "7.19.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-tools": "^6.2.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.6.3",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "uuid": "^8.3.2"
+  }
+}
