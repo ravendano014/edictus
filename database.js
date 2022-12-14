@@ -8,7 +8,7 @@ var mysqlConnection =  mysql.createPool({
   database : process.env.name_db,    
 });    
 
-pool.getConnection(function(err, connection) {
+mysqlConnection.getConnection(function(err, connection) {
   if (err) {
     console.error(err);
     return;
