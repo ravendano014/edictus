@@ -56,7 +56,7 @@ router.get('/:id', (req, res) => {
   const { id } = req.params; 
   mysqlConnection.query('SELECT * FROM estado WHERE id_estado = ?', [id], (err, rows, fields) => {
     if (!err) {
-      res.json(rows[0]);
+      res.json({"data": [rows[0]]});
     } else {
       res.json({error: err});
     }
